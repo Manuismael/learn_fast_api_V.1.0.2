@@ -1,6 +1,6 @@
 import { ConflictException, Injectable, UnauthorizedException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Auth } from 'src/entities/auths.entity';
+import { Users } from 'src/entities/users.entity';
 import { Repository } from 'typeorm';
 import * as bcrypt from 'bcrypt'; 
 import { signInDto } from '../DTOs/signIn.dto';
@@ -8,8 +8,8 @@ import { signInDto } from '../DTOs/signIn.dto';
 @Injectable()
 export class AuthService {
     constructor(
-        @InjectRepository(Auth)
-        private readonly authRepository: Repository<Auth>,  // Renommé en AuthRepository
+        @InjectRepository(Users)
+        private readonly authRepository: Repository<Users>,  // Renommé en AuthRepository
     ){}
 
     // Vérifier si l'email est unique
@@ -21,7 +21,7 @@ export class AuthService {
     }
 
     // Inscription des utilisateurs
-    async signup(auth: Auth): Promise<Auth> {
+    async signup(auth: Users): Promise<Users> {
         // Vérification si l'email est unique avant inscription
         await this.verifyEmailIsUnique(auth.email);
 

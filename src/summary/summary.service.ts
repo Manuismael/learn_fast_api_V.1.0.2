@@ -1,13 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Historic } from 'src/entities/historic.entity';
+import { Resumes } from 'src/entities/resumes.entity';
 import { Repository } from 'typeorm';
 
 @Injectable()
 export class SummaryService {
     constructor(
-        @InjectRepository(Historic)
-        private readonly resumeRepository:Repository<Historic>
+        @InjectRepository(Resumes)
+        private readonly resumeRepository:Repository<Resumes>
     ){}
 
     async save(resume:any){
@@ -15,6 +15,6 @@ export class SummaryService {
     }
 
     async findOne(id:number){
-        return this.resumeRepository.findOne({where: {id:id}})
+        return this.resumeRepository.findOne({where: {id_resum:id}})
     }
 }

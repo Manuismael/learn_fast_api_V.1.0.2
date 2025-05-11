@@ -1,4 +1,4 @@
-import { Controller, Post,UploadedFile,UseInterceptors,BadRequestException, Param, } from '@nestjs/common';
+import { Controller, Post,UploadedFile,UseInterceptors,BadRequestException, Param, Get, } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { FileService } from './file.service';
 import { diskStorage } from 'multer';
@@ -60,10 +60,11 @@ export class FileController {
         const generate_summary= await this.aiService.summarizeText(extractedText);
         const summary= this.fileService.sanitizeText(generate_summary.response.candidates[0].content.parts[0].text);
 
-        const saved_file= await this.fileService.saveFiles({path:this.filePath});
-        console.log(saved_file.id_docs);
-
-        await this.summaryService.save({libelle: libelle, content:summary, id_user:id, id_docs:saved_file.id_docs})
+        const saved_file= await this.fileService.saveFiles({path:this.filePath, Id_user:id});
+        
+        if(saved_file.Id_docs){
+          await this.summaryService.save({libelle: libelle, content:summary, Id_docs:saved_file.Id_docs})
+        }
         
         
       }
@@ -72,5 +73,10 @@ export class FileController {
       // je verrai quoi mettre aprèèèèèèèèèèèèèèès
       
     }
+  };
+
+  @Get('saved_files') //afficher tout les documents téléverser
+  getFiles(){
+    return this.fileService.getAllFiles();
   }
 }

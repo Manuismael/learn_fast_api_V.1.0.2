@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Docs } from 'src/entities/file.entity';
+import { Document } from 'src/entities/document.entity';
 import { Repository } from 'typeorm';
 import * as pdfParse from 'pdf-parse';
 import * as fs from 'fs';
@@ -8,8 +8,8 @@ import * as fs from 'fs';
 @Injectable()
 export class FileService {
     constructor(
-        @InjectRepository(Docs)
-        private readonly docsRepository:Repository<Docs>) {}
+        @InjectRepository(Document)
+        private readonly docsRepository:Repository<Document>) {}
 
     //nettoyer du texte.
     sanitizeText(input: any): string {
@@ -40,6 +40,11 @@ export class FileService {
     //sauvegarde de fichiers
     async saveFiles(docs: any){
         return this.docsRepository.save(docs);
+    }
+
+    //recupérer les fichiers
+    async getAllFiles(){
+        return this.docsRepository.find()
     }
 
 }

@@ -1,12 +1,12 @@
 import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
-import { Auth } from "./auths.entity";
-import { Docs } from "./file.entity";
+import { Users } from "./users.entity";
+import { Document } from "./document.entity";
 
 @Entity()
-export class Historic{
+export class Resumes{
 
   @PrimaryGeneratedColumn()
-  id: number;
+  id_resum: number;
 
   @Column({ type: 'text' })
   libelle: string;
@@ -18,10 +18,7 @@ export class Historic{
   date: Date;
 
   @Column()
-  id_user: number;
-
-  @Column()
-  id_docs: number;
+  Id_docs: number;
 
   /* @ManyToOne(() => Auth, user => user.id, { onDelete: 'CASCADE' })
   user: Auth;

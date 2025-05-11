@@ -2,10 +2,10 @@ import { Module } from '@nestjs/common';
 import { SummaryService } from './summary.service';
 import { SummaryController } from './summary.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Historic } from 'src/entities/historic.entity';
+import { Resumes } from 'src/entities/resumes.entity';
 
 @Module({
-  imports:[TypeOrmModule.forFeature([Historic])],
+  imports:[TypeOrmModule.forFeature([Resumes])],
   providers: [SummaryService],
   controllers: [SummaryController]
 })

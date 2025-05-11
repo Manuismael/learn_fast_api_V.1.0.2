@@ -1,16 +1,19 @@
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from "typeorm";
-import { Historic } from "./historic.entity";
+import { Resumes } from "./resumes.entity";
 
 @Entity()
-export class Docs{
+export class Document{
     @PrimaryGeneratedColumn()
-    id_docs: number;
+    Id_docs: number;
 
     @Column()
     path: string;
 
     @Column()
-    upload_at: Date;
+    date_upload: Date;
+
+    @Column()
+    Id_user: number;
 
     //@OneToMany(() => Historic, historic => historic.document)
     //historics: Historic[];

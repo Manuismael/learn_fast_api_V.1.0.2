@@ -1,5 +1,5 @@
 import { Body, Controller, Post } from '@nestjs/common';
-import { Auth } from 'src/entities/auths.entity';
+import { Users } from 'src/entities/users.entity';
 import { signInDto } from '../DTOs/signIn.dto';
 import { AuthService } from './auth.service';
 
@@ -8,7 +8,7 @@ export class AuthController {
     constructor(private readonly authservice: AuthService){}
 
     @Post()
-    create(@Body() auth: Auth): Promise<Auth>{
+    create(@Body() auth: Users): Promise<Users>{
         return this.authservice.signup(auth);
     }
 

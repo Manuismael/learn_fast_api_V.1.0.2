@@ -1,8 +1,8 @@
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from "typeorm";
-import { Historic } from "./historic.entity";
+import { Resumes } from "./resumes.entity";
 
 @Entity()
-export class Auth{
+export class Users{
     @PrimaryGeneratedColumn()
     id: number;
 

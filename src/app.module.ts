@@ -6,11 +6,14 @@ import { SummaryModule } from './summary/summary.module';
 import { QuizModule } from './quiz/quiz.module';
 import { FileModule } from './file/file.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Auth } from './entities/auths.entity';
-import { Historic } from './entities/historic.entity';
-import { Docs } from './entities/file.entity';
+import { Users } from './entities/users.entity';
+import { Resumes } from './entities/resumes.entity';
+import { Document } from './entities/document.entity';
 import { ConfigModule } from '@nestjs/config';
 import { AiModelModule } from './ai_model/ai_model.module';
+import { Quiz } from './entities/quiz.entity';
+import { Note_obtenue } from './entities/note_obtenue.entity';
+import { QuestionReponse } from './entities/question_response.entity';
 
 @Module({
   imports: [
@@ -22,8 +25,8 @@ import { AiModelModule } from './ai_model/ai_model.module';
       host: process.env.DB_HOST || 'localhost', 
       username: process.env.DB_USERNAME || 'root',
       password: process.env.DB_PASSWORD || '',
-      database: process.env.DB_NAME || 'ihsane',
-      entities: [Auth, Docs, Historic],
+      database: process.env.DB_NAME || 'learn_fast',
+      entities: [Users, Document, Resumes, Quiz, Note_obtenue, QuestionReponse],
       synchronize: false,
     }),
     AuthModule,
