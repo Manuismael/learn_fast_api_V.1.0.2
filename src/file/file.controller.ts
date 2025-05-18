@@ -66,7 +66,7 @@ export class FileController {
           await this.summaryService.save({libelle: libelle, content:summary, Id_docs:saved_file.Id_docs})
         }
         
-        
+        return {generate_summary}
       }
 
     } finally {
@@ -75,8 +75,8 @@ export class FileController {
     }
   };
 
-  @Get('saved_files') //afficher tout les documents téléverser
-  getFiles(){
-    return this.fileService.getAllFiles();
+  @Get('saved_files/:id_user') //afficher tout les documents téléverser
+  getFiles(@Param('id_user') id_user:number){
+    return this.fileService.getAllFiles(id_user);
   }
 }

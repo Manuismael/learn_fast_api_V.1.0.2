@@ -4,12 +4,13 @@ import { Document } from 'src/entities/document.entity';
 import { Repository } from 'typeorm';
 import * as pdfParse from 'pdf-parse';
 import * as fs from 'fs';
+import { AiModelService } from 'src/ai_model/ai_model.service';
 
 @Injectable()
 export class FileService {
     constructor(
         @InjectRepository(Document)
-        private readonly docsRepository:Repository<Document>) {}
+        private readonly docsRepository:Repository<Document>, ) {}
 
     //nettoyer du texte.
     sanitizeText(input: any): string {
@@ -43,8 +44,8 @@ export class FileService {
     }
 
     //recupérer les fichiers
-    async getAllFiles(){
-        return this.docsRepository.find()
+    async getAllFiles(id_user){
+        return this.docsRepository.find({where:{Id_user:id_user}})
     }
 
 }
