@@ -20,4 +20,14 @@ export class SummaryService {
     async findOne(id:number){
         return this.resumeRepository.findOne({where: {id_resum:id}})
     }
+
+    async findAll(id_user: number) {
+        return this.resumeRepository
+        .createQueryBuilder('r')
+        .innerJoin('document', 'd', 'r.id_docs = d.id_docs')
+        .where('d.id_user = :id_user', { id_user })
+        .orderBy('r.id_resum', 'DESC') 
+        .getRawMany();
+}   
+
 }

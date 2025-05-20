@@ -19,4 +19,9 @@ export class QuizController {
     noteQuiz(@Body() note:any){
         return this.quizService.notes(note);
     }
+
+    @Get('statquiz/:id_user')
+    statQuiz(@Param('id_user')id_user:number){
+        return this.quizService.quizStat(id_user);
+    }
 }

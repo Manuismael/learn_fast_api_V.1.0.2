@@ -56,7 +56,6 @@ export class QuizService {
 
         //Generate quiz questions
         const generated_quiz= await this.aiService.GenerateQuizJson(extractedText);
-        
         //stocker dans un dossier
         // Définition du chemin du dossier et du fichier JSON
         const documentsDir = path.join(process.cwd(), 'quizzes');
@@ -150,5 +149,38 @@ export class QuizService {
     async notes(note:any){
         return this.noteRepository.save(note)
     }
+
+    async quizStat(Id_user: number) {
+    const notes = await this.noteRepository.find({
+        where: { Id_user },
+        relations: ['quiz', 'quiz.resum'],
+        order: { Id_quiz: 'DESC' }, // tri par tentative la plus récente
+    });
+
+    const latestNotePerResum = new Map<number, any>();
+
+    for (const note of notes) {
+        const resumId = note.quiz.resum.id_resum;
+
+        // On ne garde que la première (la plus récente) note pour ce résumé
+        if (!latestNotePerResum.has(resumId)) {
+            const niveau =
+                note.note < 50 ? '🔴' :
+                note.note < 85 ? '🟡' :
+                                 '🟢';
+
+            latestNotePerResum.set(resumId, {
+                id_resum: resumId,
+                libelle: note.quiz.resum.libelle,
+                note: note.note,
+                niveau: niveau,
+            });
+        }
+    }
+
+    return Array.from(latestNotePerResum.values());
+}
+
+
 
 }

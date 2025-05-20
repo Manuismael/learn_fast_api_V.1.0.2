@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, ManyToOne, JoinColumn } from 'typeorm';
+import { Resumes } from './resumes.entity';
 
 @Entity()
 export class Quiz {
@@ -13,4 +14,8 @@ export class Quiz {
 
   @Column()
   Id_resum: number;
+
+  @ManyToOne(() => Resumes)
+  @JoinColumn({ name: 'Id_resum' })
+  resum: Resumes;
 }

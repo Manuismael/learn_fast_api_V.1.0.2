@@ -58,7 +58,7 @@ export class FileController {
         const libelle = this.fileService.sanitizeText(generate_libelle.response.candidates[0].content.parts[0].text);
 
         const generate_summary= await this.aiService.summarizeText(extractedText);
-        const summary= this.fileService.sanitizeText(generate_summary.response.candidates[0].content.parts[0].text);
+        const summary= generate_summary.response.candidates[0].content.parts[0].text;
 
         const saved_file= await this.fileService.saveFiles({path:this.filePath, Id_user:id});
         

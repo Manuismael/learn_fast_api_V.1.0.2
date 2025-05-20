@@ -15,15 +15,15 @@ export class AiModelService {
       try {
           const model= this.gemini.getGenerativeModel({model:"gemini-2.0-flash"});
           const prompt = `
-            Analyse et traite ce document comme un assistant IA pour l'apprentissage universitaire. 
+            Analyse et traite ce document comme un assistant IA pour l'apprentissage et la compréhension total des étudiants. 
             Objectif :
-            - Résume précisément et fidèlement le document, de façon concise, structurée et sans changer le sens.
+            - Résume précisément et fidèlement le document, aborde toute les notions du documents,de façon concise, structurée et sans changer le sens.
             - Ne commence pas par une formule d'introduction (ex: "Voici un résumé..."), va directement au contenu.
             - Génère ensuite une fiche de révision claire et pratique :
               * Notions et concepts clés et explications
               * Dates, auteurs, titres ou événements importants si présents
               * Citations, formules ou définitions importantes à mémoriser
-              * Explications suplémentaires
+              * Explications suplémentaires détaillé pour faiciliter la compréhension
             - Termine par une phrase de conclusion simple qui synthétise l'apport du document pour l'étudiant.
 
             Langage : clair, pédagogique, sans lourdeur ni redondance.
@@ -33,7 +33,6 @@ export class AiModelService {
             `;
 
           const result = await model.generateContent(prompt);
-          console.log(result.response.text());
           return result;
       } catch (error) {
           console.error('Error during summarization:', error);
@@ -47,9 +46,9 @@ export class AiModelService {
           const model = this.gemini.getGenerativeModel({ model: "gemini-1.5-flash" });
       
           const prompt =
-            "Génère un QCM en format JSON basé sur le texte suivant permettant d'évaluer un étudiant, avec cette structure : " +
-            "{ question: [ { questionText: '', options: [ { text: '', correct: true }, { text: '' }, { text: '' }, { text: '' } ], explanation: '' } ] } " +
-            "Le nombre de questions sera en fonction des notions abordés Utilise le texte suivant pour les questions et réponses : " + text;
+            "Génère un QCM en format JSON basé sur le texte suivant permettant d'évaluer un étudiant, avec cette structure stricte : " +
+            "{ questions: [ { questionText: '', options: [ { text: '', correct: true }, { text: '' }, { text: '' }, { text: '' } ], explanation: '' } ] } " +
+            "Le nombre de questions sera en fonction de toutes les notions abordés Utilise le texte suivant pour les questions et réponses : " + text;
       
           const result = await model.generateContent(prompt);
           const rawText = await result.response.text();
@@ -111,7 +110,6 @@ export class AiModelService {
           `;
 
         const titre = await model.generateContent(prompt);
-        console.log(titre.response.text());
         return titre;
         } catch (error) {
             console.error('Error during summarization:', error);
@@ -130,7 +128,6 @@ export class AiModelService {
             Document :
             ${text}
             `;
-  
           const titre = await model.generateContent(prompt);
           return titre;
           } catch (error) {
