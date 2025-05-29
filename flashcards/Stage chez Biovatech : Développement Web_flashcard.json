@@ -1,0 +1,54 @@
+{
+  "flashcards": [
+    {
+      "statement": "Le stage d'IYANDA Ismaël Emmanuel a duré un mois.",
+      "isTrue": false,
+      "explanation": "Le rapport indique que le stage a duré deux (02) mois."
+    },
+    {
+      "statement": "Biovatech est spécialisé dans le développement d'applications web et mobiles, le design et les formations.",
+      "isTrue": true,
+      "explanation": "Ceci est explicitement mentionné dans la section 'Présentation de la structure'."
+    },
+    {
+      "statement": "Le mini-projet 'Interface de Gestion CRUD d’Articles' utilisait Node.js comme technologie backend.",
+      "isTrue": false,
+      "explanation": "Les technologies utilisées étaient Bootstrap, HTML, CSS, JQUERY, AJAX et Firebase.  Aucun backend n'est mentionné pour ce projet."
+    },
+    {
+      "statement": "L'application web d'inscription aux ateliers de formation utilisait une base de données SQL.",
+      "isTrue": false,
+      "explanation": "Une base de données NoSQL (MongoDB) a été utilisée."
+    },
+    {
+      "statement": "Le mini-projet 'Microservices' portait sur la gestion de livres et de visiteurs d'une bibliothèque en ligne.",
+      "isTrue": true,
+      "explanation": "Ceci est décrit dans la section 'Mini-projet : Microservices'."
+    },
+    {
+      "statement": "L'étape d'analyse des besoins pour chaque projet durait généralement une semaine.",
+      "isTrue": false,
+      "explanation": "La durée de cette étape est indiquée comme étant entre 1 et 2 jours."
+    },
+    {
+      "statement": "IYANDA Ismaël Emmanuel a rencontré des difficultés avec Angular et NestJS durant son stage.",
+      "isTrue": true,
+      "explanation": "Ceci est clairement indiqué dans la section 'Difficultés rencontrées'."
+    },
+    {
+      "statement": "Le stagiaire a maîtrisé React durant son stage.",
+      "isTrue": false,
+      "explanation": "Le rapport ne mentionne pas React, mais plutôt Angular et NestJS."
+    },
+    {
+      "statement": "Le rapport mentionne l'utilisation de Git comme outil de gestion de projet.",
+      "isTrue": true,
+      "explanation": "Git est listé comme outil utilisé dans le projet d'application web d'inscription."
+    },
+    {
+      "statement": "IYANDA Ismaël Emmanuel a utilisé Insomnia pour tester les APIs.",
+      "isTrue": true,
+      "explanation": "Insomnia est mentionné dans les outils utilisés pour les projets."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "questionText": "Quelle est la spécialité de l'entreprise Biovatech ?",
+      "options": [
+        {
+          "text": "Développement d'applications web et mobiles, Design et Formations numériques",
+          "correct": true
+        },
+        {
+          "text": "Développement de jeux vidéo et réalité virtuelle",
+          "correct": false
+        },
+        {
+          "text": "Conseil en stratégie digitale et marketing",
+          "correct": false
+        },
+        {
+          "text": "Maintenance informatique et réseaux",
+          "correct": false
+        }
+      ],
+      "explanation": "Le texte indique clairement que Biovatech est spécialisée dans le développement d'applications web et mobiles, le design et les formations numériques."
+    },
+    {
+      "questionText": "Quelles technologies ont été utilisées pour le mini-projet d'interface de gestion CRUD d'articles ?",
+      "options": [
+        {
+          "text": "Bootstrap, HTML, CSS, JQUERY, AJAX et Firebase",
+          "correct": true
+        },
+        {
+          "text": "React, Node.js, MongoDB et AWS",
+          "correct": false
+        },
+        {
+          "text": "Angular, Spring Boot et MySQL",
+          "correct": false
+        },
+        {
+          "text": "Vue.js, Python et PostgreSQL",
+          "correct": false
+        }
+      ],
+      "explanation": "Le rapport de stage liste explicitement ces technologies pour ce mini-projet."
+    },
+    {
+      "questionText": "Quelles technologies ont été utilisées pour le projet d'application web d'inscription aux ateliers de formation ?",
+      "options": [
+        {
+          "text": "Frontend: Angular et Tailwind CSS ; Backend: NestJS ; Base de données: MongoDB",
+          "correct": true
+        },
+        {
+          "text": "Frontend: React et Bootstrap ; Backend: Node.js ; Base de données: MySQL",
+          "correct": false
+        },
+        {
+          "text": "Frontend: Vue.js et Material UI ; Backend: Python (Django) ; Base de données: PostgreSQL",
+          "correct": false
+        },
+        {
+          "text": "Frontend: HTML et CSS ; Backend: PHP ; Base de données: SQLite",
+          "correct": false
+        }
+      ],
+      "explanation": "Le rapport détaille les technologies utilisées pour chaque partie du projet."
+    },
+    {
+      "questionText": "Quelle(s) difficulté(s) majeure(s) a rencontrée l'étudiant durant son stage ?",
+      "options": [
+        {
+          "text": "Difficultés avec NestJS, Angular, l'intégration des paiements avec Stripe et FedaPay, et l'utilisation de LocalStorage()",
+          "correct": true
+        },
+        {
+          "text": "Difficultés avec le travail en équipe et la gestion de projet",
+          "correct": false
+        },
+        {
+          "text": "Difficultés à comprendre les besoins du client",
+          "correct": false
+        },
+        {
+          "text": "Difficultés liées au matériel informatique",
+          "correct": false
+        }
+      ],
+      "explanation": "La section 'Difficultés rencontrées' du rapport détaille précisément ces problèmes."
+    },
+    {
+      "questionText": "Quelle base de données a été utilisée dans le mini-projet sur les microservices ?",
+      "options": [
+        {
+          "text": "Aucune base de données n'est mentionnée.",
+          "correct": true
+        },
+        {
+          "text": "MongoDB",
+          "correct": false
+        },
+        {
+          "text": "Firebase",
+          "correct": false
+        },
+        {
+          "text": "MySQL",
+          "correct": false
+        }
+      ],
+      "explanation": "Le texte ne précise pas l'utilisation d'une base de données pour le mini-projet microservices."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "flashcards": [
+    {
+      "statement": "Android est un système d'exploitation open source pour terminaux mobiles.",
+      "isTrue": true,
+      "explanation": "Le texte l'indique clairement dans l'introduction."
+    },
+    {
+      "statement": "Android a été initialement conçu par Google.",
+      "isTrue": false,
+      "explanation": "Android a été conçu par une startup, puis rachetée par Google en 2005."
+    },
+    {
+      "statement": "Le système d'exploitation Android est basé sur Windows.",
+      "isTrue": false,
+      "explanation": "Le système d'exploitation Android est basé sur Linux."
+    },
+    {
+      "statement": "Pour développer des applications Android natives, on peut utiliser Java, C ou C#.",
+      "isTrue": true,
+      "explanation": "Le texte mentionne le développement natif avec Java, C, et C#."
+    },
+    {
+      "statement": "Une application Android peut s'exécuter sur une machine virtuelle Java standard.",
+      "isTrue": false,
+      "explanation": "Android utilise sa propre machine virtuelle, Dalvik Virtual Machine, et ne supporte pas toutes les fonctionnalités de la JRE. Une application Java native ne peut pas s'exécuter sous Android."
+    },
+    {
+      "statement": "Le SDK Android est développé en Kotlin.",
+      "isTrue": false,
+      "explanation": "Le SDK Android est développé en Java,  bien que Kotlin soit aussi utilisé."
+    },
+    {
+      "statement": "Android Studio est l'outil de développement recommandé pour ce cours.",
+      "isTrue": true,
+      "explanation": "Le texte indique que Android Studio est utilisé comme outil."
+    },
+    {
+      "statement": "L'outil adb permet de transférer des fichiers, installer des applications et paramétrer le réseau.",
+      "isTrue": true,
+      "explanation": "Le texte décrit ces fonctionnalités d'adb."
+    },
+    {
+      "statement": "Une application Android de type 'service' possède une interface utilisateur.",
+      "isTrue": false,
+      "explanation": "Les applications de type 'service' s'exécutent en tâche de fond sans interface utilisateur."
+    },
+    {
+      "statement": "Un 'widget' Android est une application utilitaire pouvant être placée sur l'écran du téléphone.",
+      "isTrue": true,
+      "explanation": "La description des types d'applications inclut cette définition des widgets."
+    },
+    {
+      "statement": "Le fichier manifest définit le nom du package de l'application et décrit ses composantes.",
+      "isTrue": true,
+      "explanation": "La description du fichier manifest inclut ces informations."
+    },
+    {
+      "statement": "Une activité Android peut être instanciée directement par le développeur.",
+      "isTrue": false,
+      "explanation": "Une activité est instanciée par le système en utilisant des intentions."
+    },
+    {
+      "statement": "Android recommande l'utilisation de fichiers XML pour définir les interfaces utilisateur.",
+      "isTrue": true,
+      "explanation": "Le texte précise cette recommandation pour les interfaces."
+    },
+    {
+      "statement": "Les vues Android peuvent être modifiées par n'importe quel thread.",
+      "isTrue": false,
+      "explanation": "Seul le thread principal « UIThread » peut modifier les vues."
+    },
+    {
+      "statement": "La méthode `findViewById()` permet de récupérer l'instance d'une vue à partir de son identifiant dans le fichier XML.",
+      "isTrue": true,
+      "explanation": "Le texte explique l'utilisation de `findViewById()`."
+    },
+    {
+      "statement": "LinearLayout permet de positionner les vues de manière linéaire (horizontale ou verticale).",
+      "isTrue": true,
+      "explanation": "La description de LinearLayout inclut cette information."
+    },
+    {
+      "statement": "RelativeLayout permet de positionner les éléments les uns par rapport aux autres.",
+      "isTrue": true,
+      "explanation": "La description de RelativeLayout précise cette fonctionnalité."
+    },
+    {
+      "statement": "Un Context fournit des informations sur l'environnement de l'application et permet d'accéder à ses ressources.",
+      "isTrue": true,
+      "explanation": "La description du Context inclut cette information."
+    },
+    {
+      "statement": "Une intention explicite spécifie la classe exacte qui doit être exécutée.",
+      "isTrue": true,
+      "explanation": "La différence entre intentions explicites et implicites est décrite dans le texte."
+    },
+    {
+      "statement": "La méthode `startActivityForResult()` permet de lancer une activité et d'attendre un résultat.",
+      "isTrue": true,
+      "explanation": "Le texte mentionne l'utilisation de `startActivityForResult()`."
+    },
+    {
+      "statement": "La méthode `putExtra()` permet d'ajouter des paramètres à une intention.",
+      "isTrue": true,
+      "explanation": "L'utilisation de `putExtra()` pour ajouter des paramètres est expliquée."
+    },
+    {
+      "statement": "Les ressources Android sont uniquement constituées de code.",
+      "isTrue": false,
+      "explanation": "Les ressources comprennent également des éléments statiques comme les images, les sons et les textes."
+    },
+    {
+      "statement": "Un adaptateur définit une structure d'affichage pour les groupes (ListView, Spinner...).",
+      "isTrue": true,
+      "explanation": "La description des adaptateurs inclut cette information."
+    },
+    {
+      "statement": "Les permissions Android sont visibles par l'utilisateur au moment de l'installation de l'application.",
+      "isTrue": true,
+      "explanation": "La description des permissions inclut cette information."
+    },
+    {
+      "statement": "Pour accéder à Internet depuis une application Android, la permission INTERNET est requise.",
+      "isTrue": true,
+      "explanation": "Le texte explicite cette nécessité."
+    },
+    {
+      "statement": "Les opérations longues doivent être exécutées dans le thread principal pour éviter les exceptions.",
+      "isTrue": false,
+      "explanation": "Les opérations longues doivent être exécutées dans un thread secondaire (hors UIThread) pour éviter les exceptions."
+    },
+    {
+      "statement": "La classe `AsyncTask` permet d'exécuter des tâches asynchrones.",
+      "isTrue": true,
+      "explanation": "L'utilisation d' `AsyncTask` est expliquée pour gérer les taches asynchrones."
+    }
+  ]
+}
