@@ -79,4 +79,9 @@ export class FileController {
   getFiles(@Param('id_user') id_user:number){
     return this.fileService.getAllFiles(id_user);
   }
+
+  @Get('doc/:id_doc')
+  getOneDoc(@Param('id_doc') id_doc:number){
+    return this.fileService.getOneDoc(id_doc);
+  }
 }

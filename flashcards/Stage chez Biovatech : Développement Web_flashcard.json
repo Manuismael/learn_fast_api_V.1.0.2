@@ -6,49 +6,54 @@
       "explanation": "Le rapport indique que le stage a duré deux (02) mois."
     },
     {
-      "statement": "Biovatech est spécialisé dans le développement d'applications web et mobiles, le design et les formations.",
+      "statement": "Biovatech est spécialisée dans le développement d'applications web, mobiles, le design et les formations numériques.",
       "isTrue": true,
-      "explanation": "Ceci est explicitement mentionné dans la section 'Présentation de la structure'."
+      "explanation": "Le texte le précise dans la section I. Présentation de la structure."
     },
     {
-      "statement": "Le mini-projet 'Interface de Gestion CRUD d’Articles' utilisait Node.js comme technologie backend.",
+      "statement": "Le mini-projet 'Interface de Gestion CRUD d’Articles' utilisait React comme framework frontend.",
       "isTrue": false,
-      "explanation": "Les technologies utilisées étaient Bootstrap, HTML, CSS, JQUERY, AJAX et Firebase.  Aucun backend n'est mentionné pour ce projet."
+      "explanation": "Le mini-projet utilisait Bootstrap, HTML, CSS, JQUERY, AJAX et Firebase."
     },
     {
-      "statement": "L'application web d'inscription aux ateliers de formation utilisait une base de données SQL.",
+      "statement": "Le projet d'application web d'inscription aux ateliers utilisait Node.js en backend.",
       "isTrue": false,
-      "explanation": "Une base de données NoSQL (MongoDB) a été utilisée."
+      "explanation": "Le backend utilisait NestJS."
     },
     {
-      "statement": "Le mini-projet 'Microservices' portait sur la gestion de livres et de visiteurs d'une bibliothèque en ligne.",
+      "statement": "MongoDB était la base de données utilisée pour le projet d'inscription aux ateliers.",
       "isTrue": true,
-      "explanation": "Ceci est décrit dans la section 'Mini-projet : Microservices'."
+      "explanation": "Ceci est spécifié dans la section II.B."
     },
     {
-      "statement": "L'étape d'analyse des besoins pour chaque projet durait généralement une semaine.",
-      "isTrue": false,
-      "explanation": "La durée de cette étape est indiquée comme étant entre 1 et 2 jours."
-    },
-    {
-      "statement": "IYANDA Ismaël Emmanuel a rencontré des difficultés avec Angular et NestJS durant son stage.",
+      "statement": "Le mini-projet sur les microservices portait sur la gestion d'une bibliothèque en ligne.",
       "isTrue": true,
-      "explanation": "Ceci est clairement indiqué dans la section 'Difficultés rencontrées'."
+      "explanation": "La description du mini-projet le confirme."
     },
     {
-      "statement": "Le stagiaire a maîtrisé React durant son stage.",
+      "statement": "L'étape d'analyse des besoins des projets durait toujours plus de deux jours.",
       "isTrue": false,
-      "explanation": "Le rapport ne mentionne pas React, mais plutôt Angular et NestJS."
-    },
-    {
-      "statement": "Le rapport mentionne l'utilisation de Git comme outil de gestion de projet.",
-      "isTrue": true,
-      "explanation": "Git est listé comme outil utilisé dans le projet d'application web d'inscription."
+      "explanation": "Le texte indique que cette étape durait généralement entre 1 et 2 jours."
     },
     {
       "statement": "IYANDA Ismaël Emmanuel a utilisé Insomnia pour tester les APIs.",
       "isTrue": true,
-      "explanation": "Insomnia est mentionné dans les outils utilisés pour les projets."
+      "explanation": "Ceci est mentionné dans les sections II.B et II.C."
+    },
+    {
+      "statement": "Les difficultés rencontrées concernaient uniquement le frontend.",
+      "isTrue": false,
+      "explanation": "Des difficultés ont été rencontrées aussi bien en backend (NestJS, implémentation de filtres et pagination) qu'en frontend (Angular, intégration des paiements)."
+    },
+    {
+      "statement": "IYANDA Ismaël Emmanuel a acquis une maîtrise de Angular et de Tailwind CSS.",
+      "isTrue": true,
+      "explanation": "Ceci est explicitement mentionné dans la section V. Compétences développées."
+    },
+    {
+      "statement": "Le stage a été jugé peu bénéfique par l'étudiant.",
+      "isTrue": false,
+      "explanation": "L'étudiant décrit son expérience comme 'très bénéfique' dans la section VI. Analyse personnelle."
     }
   ]
 }

@@ -43,9 +43,14 @@ export class FileService {
         return this.docsRepository.save(docs);
     }
 
-    //recupérer les fichiers
-    async getAllFiles(id_user){
+    //recupérer les fichiers d'un user
+    async getAllFiles(id_user:number){
         return this.docsRepository.find({where:{Id_user:id_user}})
+    }
+
+    //recupérer un document spécifique
+    async getOneDoc(id_docs:number){
+        return this.docsRepository.findOne({where: {Id_docs : id_docs}})
     }
 
 }

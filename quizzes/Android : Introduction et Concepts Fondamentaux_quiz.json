@@ -1,0 +1,180 @@
+{
+  "questions": [
+    {
+      "questionText": "Quel est l'objectif principal de ce cours d'introduction à la programmation native Android ?",
+      "options": [
+        {
+          "text": "Comprendre l'architecture du système Android, l'organisation d'une application Android et développer des applications natives Android.",
+          "correct": true
+        },
+        {
+          "text": "Développer uniquement des applications hybrides pour Android.",
+          "correct": false
+        },
+        {
+          "text": "Apprendre à utiliser uniquement le langage Kotlin pour le développement Android.",
+          "correct": false
+        },
+        {
+          "text": "Maîtriser les bases de la programmation Java sans application concrète.",
+          "correct": false
+        }
+      ],
+      "explanation": "Le cours vise une compréhension globale du développement Android natif, incluant l'architecture, l'organisation des applications et leur développement."
+    },
+    {
+      "questionText": "Quels sont les langages de programmation principalement utilisés dans le développement natif Android abordé dans ce cours ?",
+      "options": [
+        {
+          "text": "Java et Kotlin",
+          "correct": true
+        },
+        {
+          "text": "Seulement Java",
+          "correct": false
+        },
+        {
+          "text": "Seulement Kotlin",
+          "correct": false
+        },
+        {
+          "text": "C++ et C#",
+          "correct": false
+        }
+      ],
+      "explanation": "Le cours utilise Java et Kotlin comme langages principaux pour le développement d'applications natives Android."
+    },
+    {
+      "questionText": "Quel est le rôle du fichier AndroidManifest.xml ?",
+      "options": [
+        {
+          "text": "Configurer l'application, définir son package, décrire ses composants (activités, services, etc.) et déclarer ses permissions.",
+          "correct": true
+        },
+        {
+          "text": "Définir l'interface utilisateur de l'application.",
+          "correct": false
+        },
+        {
+          "text": "Gérer la base de données de l'application.",
+          "correct": false
+        },
+        {
+          "text": "Contenir le code source de l'application.",
+          "correct": false
+        }
+      ],
+      "explanation": "Le fichier AndroidManifest.xml est crucial pour la configuration et la description de l'application auprès du système Android."
+    },
+    {
+      "questionText": "Quelle est la différence principale entre une intention explicite et une intention implicite ?",
+      "options": [
+        {
+          "text": "Une intention explicite spécifie la classe exacte à exécuter, tandis qu'une intention implicite fournit des informations permettant au système de déterminer le composant approprié.",
+          "correct": true
+        },
+        {
+          "text": "Il n'y a pas de différence significative entre les deux.",
+          "correct": false
+        },
+        {
+          "text": "Une intention explicite est utilisée pour les services, et une intention implicite pour les activités.",
+          "correct": false
+        },
+        {
+          "text": "Une intention explicite est plus rapide qu'une intention implicite.",
+          "correct": false
+        }
+      ],
+      "explanation": "La différence clé réside dans la spécification du composant cible: explicite (composant nommé) vs implicite (action et données)."
+    },
+    {
+      "questionText": "Quel outil est utilisé pour gérer le téléchargement des plateformes et outils Android ?",
+      "options": [
+        {
+          "text": "SDK Manager",
+          "correct": true
+        },
+        {
+          "text": "Android Studio",
+          "correct": false
+        },
+        {
+          "text": "ADB",
+          "correct": false
+        },
+        {
+          "text": "Gradle",
+          "correct": false
+        }
+      ],
+      "explanation": "Le SDK Manager permet de télécharger les différentes versions d'Android, les outils et les APIs."
+    },
+    {
+      "questionText": "A quoi sert la méthode `setContentView()` ?",
+      "options": [
+        {
+          "text": "Associer un layout à une activité.",
+          "correct": true
+        },
+        {
+          "text": "Créer une nouvelle activité.",
+          "correct": false
+        },
+        {
+          "text": "Définir les permissions de l'application.",
+          "correct": false
+        },
+        {
+          "text": "Gérer les événements utilisateur.",
+          "correct": false
+        }
+      ],
+      "explanation": "Cette méthode lie le layout XML à l'interface graphique de l'activité."
+    },
+    {
+      "questionText": "Quel est le rôle d'un `Adapter` dans Android ?",
+      "options": [
+        {
+          "text": "Fournir une structure d'affichage pour les groupes d'éléments (ListView, GridView, etc.).",
+          "correct": true
+        },
+        {
+          "text": "Gérer les événements utilisateur.",
+          "correct": false
+        },
+        {
+          "text": "Définir l'architecture de l'application.",
+          "correct": false
+        },
+        {
+          "text": "Stocker les données de l'application.",
+          "correct": false
+        }
+      ],
+      "explanation": "Les Adapters sont essentiels pour afficher des collections de données dans des vues comme ListView ou GridView."
+    },
+    {
+      "questionText": "Où sont déclarées les permissions d'une application Android ?",
+      "options": [
+        {
+          "text": "Dans le fichier AndroidManifest.xml",
+          "correct": true
+        },
+        {
+          "text": "Dans le code Java de l'activité principale",
+          "correct": false
+        },
+        {
+          "text": "Dans un fichier séparé de configuration",
+          "correct": false
+        },
+        {
+          "text": "Elles sont automatiquement déterminées par le système",
+          "correct": false
+        }
+      ],
+      "explanation": "Les permissions nécessaires à l'application doivent être déclarées explicitement dans le fichier manifest."
+    }
+  ]
+}

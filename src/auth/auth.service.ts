@@ -4,12 +4,14 @@ import { Users } from 'src/entities/users.entity';
 import { Repository } from 'typeorm';
 import * as bcrypt from 'bcrypt'; 
 import { signInDto } from '../DTOs/signIn.dto';
+import { JwtService } from '@nestjs/jwt';
 
 @Injectable()
 export class AuthService {
     constructor(
         @InjectRepository(Users)
-        private readonly authRepository: Repository<Users>,  // Renommé en AuthRepository
+        private readonly authRepository: Repository<Users>,
+        private jwtService: JwtService
     ){}
 
     // Vérifier si l'email est unique
@@ -40,19 +42,34 @@ export class AuthService {
         const Auth = await this.authRepository.findOne({ where: { email } });
 
         if (!Auth) {
-            throw new UnauthorizedException('Identifiants incorrects.');
+            return {
+                message: 'Identifiants incorrects',
+                error: "Unauthorized",
+                statusCode: 401
+            };
         }
 
         // Vérification du mot de passe
         const passwordValid = await bcrypt.compare(password, Auth.password);
         if (!passwordValid) {
-            throw new UnauthorizedException('Identifiants incorrects.');
+            return {
+                message: 'Identifiants incorrects',
+                error: "Unauthorized",
+                statusCode: 401
+            };
         }
 
-        // À ce stade, l'utilisateur est authentifié, et on peut générer un token JWT si nécessaire
+        const payload = { sub: Auth.id, email: Auth.email };
+
+        // Génération du token
+        const token = this.jwtService.sign(payload);
+
+        // À ce stade, l'utilisateur est authentifié
         return {
             message: 'Connexion réussie',
+            token,
             AuthId: Auth.id,
+            statusCode: 201
         };
     }
 }

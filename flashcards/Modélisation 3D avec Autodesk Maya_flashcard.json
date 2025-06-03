@@ -1,0 +1,119 @@
+{
+  "flashcards": [
+    {
+      "statement": "Autodesk Maya est un logiciel de modélisation 3D gratuit.",
+      "isTrue": false,
+      "explanation": "Autodesk Maya est un logiciel propriétaire payant, mais une version étudiante est disponible gratuitement pendant 3 ans."
+    },
+    {
+      "statement": "La modélisation est la base de tout logiciel de 3D.",
+      "isTrue": true,
+      "explanation": "Sans modélisation, il est impossible d'afficher quoi que ce soit à l'écran."
+    },
+    {
+      "statement": "La modélisation polygonale consiste à manipuler les faces, les arêtes et les sommets d'un polygone.",
+      "isTrue": true,
+      "explanation": "En modifiant ces composants, on peut créer des objets complexes à partir de formes basiques."
+    },
+    {
+      "statement": "La qualité des réalisations en modélisation polygonale dépend du logiciel utilisé.",
+      "isTrue": false,
+      "explanation": "La maitrise des techniques est plus importante que le choix du logiciel.  La qualité ne dépend pas du logiciel utilisé."
+    },
+    {
+      "statement": "Les logiciels de sculpture 3D sont inutiles pour les professionnels.",
+      "isTrue": false,
+      "explanation": "Les logiciels de sculpture 3D sont indispensables pour ajouter des détails très précis et créer des textures."
+    },
+    {
+      "statement": "Maya gère uniquement les trois dimensions spatiales (X, Y, Z).",
+      "isTrue": false,
+      "explanation": "Maya gère aussi la quatrième dimension, le temps, permettant l'animation."
+    },
+    {
+      "statement": "La vue orthographique déforme les objets avec la distance.",
+      "isTrue": false,
+      "explanation": "La vue orthographique (isométrique) ne déforme pas les objets avec la distance, contrairement à la vue en perspective."
+    },
+    {
+      "statement": "Une image 2D est composée de pixels, chaque pixel ayant une couleur et une position (X, Y).",
+      "isTrue": true,
+      "explanation": "La résolution d'une image est déterminée par le nombre de pixels."
+    },
+    {
+      "statement": "Le  `Marking Menu`  de Maya  affiche des options contextuelles autour du curseur de la souris.",
+      "isTrue": true,
+      "explanation": "Ce menu s'adapte à la sélection et permet une modélisation rapide."
+    },
+    {
+      "statement": "Les raccourcis clavier sont obligatoires pour utiliser efficacement Maya.",
+      "isTrue": false,
+      "explanation": "Le `Marking Menu` offre une alternative rapide aux raccourcis clavier."
+    },
+    {
+      "statement": "Le `Smooth Preview` ajoute des faces supplémentaires au modèle.",
+      "isTrue": false,
+      "explanation": "Le `Smooth Preview` prévisualise l'adoucissement sans modifier le nombre de faces du modèle low-poly."
+    },
+    {
+      "statement": "Les `Edges Loops` fonctionnent sur toutes les types de faces.",
+      "isTrue": false,
+      "explanation": "Les `Edges Loops` ne fonctionnent que sur les faces à quatre sommets."
+    },
+    {
+      "statement": "Les opérations booléennes permettent de combiner ou de soustraire des polygones.",
+      "isTrue": true,
+      "explanation": "Elles peuvent créer des erreurs de maillage qu'il faut corriger."
+    },
+    {
+      "statement": "Les `Layers` de Maya permettent de superposer des objets.",
+      "isTrue": false,
+      "explanation": "Les `Layers` permettent de gérer la visibilité, la sélection et les performances, mais pas la superposition."
+    },
+    {
+      "statement": "Le `Final Gathering` est une technique de rendu qui permet de simuler les rebonds de la lumière.",
+      "isTrue": true,
+      "explanation": "Cela permet d'obtenir un éclairage plus réaliste."
+    },
+    {
+      "statement": "Une map HDRI est une texture appliquée à une sphère qui éclaire la scène.",
+      "isTrue": true,
+      "explanation": "Elle peut être utilisée avec le `Final Gathering` pour créer un éclairage réaliste."
+    },
+    {
+      "statement": "Les Blend Shapes permettent d'animer des objets en les déplaçant frame par frame.",
+      "isTrue": false,
+      "explanation": "Les Blend Shapes permettent de créer des déformations et de les combiner pour animer les expressions faciales par exemple."
+    },
+    {
+      "statement": "Le rigging est le processus de création d'une armature pour animer un personnage.",
+      "isTrue": true,
+      "explanation": "Les joints (bones) sont liés au maillage pour créer des articulations."
+    },
+    {
+      "statement": "L'IK Handle permet d'animer un bras en déplaçant chaque joint individuellement.",
+      "isTrue": false,
+      "explanation": "L'IK Handle gère automatiquement les articulations en déplaçant les extrémités."
+    },
+    {
+      "statement": "Les nParticles permettent de créer des effets de fumée, d'eau et de nombreux autres.",
+      "isTrue": true,
+      "explanation": "Elles interagissent avec l'environnement grâce au moteur physique."
+    },
+    {
+      "statement": "Maya Fur permet de créer des fourrure de n'importe qu'elle animal.",
+      "isTrue": true,
+      "explanation": "Il est possible de combiner les presets pour obtenir différents résultats."
+    },
+    {
+      "statement": "Mudbox est un logiciel uniquement dédié à la modélisation 3D.",
+      "isTrue": false,
+      "explanation": "Mudbox est un logiciel de sculpture numérique et de texturing."
+    },
+    {
+      "statement": "PTex permet de peindre sur les polygones sans avoir besoin d'UVs.",
+      "isTrue": true,
+      "explanation": "Cependant, cette technique n'est pas encore compatible avec tous les moteurs de rendu."
+    }
+  ]
+}

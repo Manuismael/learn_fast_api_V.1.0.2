@@ -13,11 +13,11 @@ export class AiModelService {
     // Résumer le texte avec Gemini
     async summarizeText(text: string): Promise<any> {
       try {
-          const model= this.gemini.getGenerativeModel({model:"gemini-2.0-flash"});
+          const model= this.gemini.getGenerativeModel({model:"gemini-1.5-flash"});
           const prompt = `
             Analyse et traite ce document comme un assistant IA pour l'apprentissage et la compréhension total des étudiants. 
             Objectif :
-            - Résume précisément et fidèlement le document, aborde toute les notions du documents,de façon concise, structurée et sans changer le sens.
+            - Résume précisément et fidèlement le document, aborde toute les notions du documents, structurée et sans changer le sens.
             - Ne commence pas par une formule d'introduction (ex: "Voici un résumé..."), va directement au contenu.
             - Génère ensuite une fiche de révision claire et pratique :
               * Notions et concepts clés et explications
@@ -100,7 +100,7 @@ export class AiModelService {
     //Titre des historiques de chaque resumé
     async historyName(text:string){
       try {
-        const model= this.gemini.getGenerativeModel({model:"gemini-2.0-flash"});
+        const model= this.gemini.getGenerativeModel({model:"gemini-1.5-flash"});
         const prompt = `
           - Ne commence pas par une formule d'introduction (ex: "Voici un titre...").
           - Génère un titre court à ce document
@@ -120,7 +120,7 @@ export class AiModelService {
 
     async fileName(text:string){
         try {
-          const model= this.gemini.getGenerativeModel({model:"gemini-2.0-flash"});
+          const model= this.gemini.getGenerativeModel({model:"gemini-1.5-flash"});
           const prompt = `
             - Ne commence pas par une formule d'introduction (ex: "Voici un titre...").
             - Donne un nom court à ce document
