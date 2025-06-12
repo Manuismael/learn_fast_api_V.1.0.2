@@ -1,0 +1,202 @@
+{
+  "questions": [
+    {
+      "questionText": "Où se situe la ville de Rivemont ?",
+      "options": [
+        {
+          "text": "Entourée de vastes forêts et de collines verdoyantes",
+          "correct": true
+        },
+        {
+          "text": "Au bord d'un grand fleuve",
+          "correct": false
+        },
+        {
+          "text": "Dans un désert aride",
+          "correct": false
+        },
+        {
+          "text": "Sur une île isolée",
+          "correct": false
+        }
+      ],
+      "explanation": "Le texte indique que Rivemont est entourée de vastes forêts et de collines verdoyantes."
+    },
+    {
+      "questionText": "Quels sont les noms des parents de Louise et Antoine ?",
+      "options": [
+        {
+          "text": "Jacques et Marie",
+          "correct": true
+        },
+        {
+          "text": "Pierre et Sophie",
+          "correct": false
+        },
+        {
+          "text": "Jean et Isabelle",
+          "correct": false
+        },
+        {
+          "text": "Paul et Claire",
+          "correct": false
+        }
+      ],
+      "explanation": "Le père s'appelle Jacques et la mère s'appelle Marie."
+    },
+    {
+      "questionText": "Quel est le métier du père, Jacques ?",
+      "options": [
+        {
+          "text": "Forgeron",
+          "correct": true
+        },
+        {
+          "text": "Boulanger",
+          "correct": false
+        },
+        {
+          "text": "Menuisier",
+          "correct": false
+        },
+        {
+          "text": "Pêcheur",
+          "correct": false
+        }
+      ],
+      "explanation": "Jacques, le père, est forgeron."
+    },
+    {
+      "questionText": "Qu'ont découvert Louise et Antoine près d'un vieux chêne ?",
+      "options": [
+        {
+          "text": "Un passage secret",
+          "correct": true
+        },
+        {
+          "text": "Un trésor enfoui",
+          "correct": false
+        },
+        {
+          "text": "Un animal blessé",
+          "correct": false
+        },
+        {
+          "text": "Une cabane abandonnée",
+          "correct": false
+        }
+      ],
+      "explanation": "Ils ont découvert un passage secret caché sous les racines d'un vieux chêne."
+    },
+    {
+      "questionText": "Qu'est-ce qui illuminait la vaste grotte découverte par les enfants ?",
+      "options": [
+        {
+          "text": "Des cristaux brillants",
+          "correct": true
+        },
+        {
+          "text": "Des torches enflammées",
+          "correct": false
+        },
+        {
+          "text": "La lumière du soleil",
+          "correct": false
+        },
+        {
+          "text": "Des lampes à huile",
+          "correct": false
+        }
+      ],
+      "explanation": "La grotte était illuminée par des cristaux brillants incrustés dans les murs."
+    },
+    {
+      "questionText": "Qu'est-ce que contenait le coffre trouvé dans la grotte ?",
+      "options": [
+        {
+          "text": "Des pièces d'or, des bijoux anciens et des parchemins mystérieux",
+          "correct": true
+        },
+        {
+          "text": "Des armes rouillées et des outils anciens",
+          "correct": false
+        },
+        {
+          "text": "Des vêtements précieux et des étoffes rares",
+          "correct": false
+        },
+        {
+          "text": "Des cartes du monde et des instruments de navigation",
+          "correct": false
+        }
+      ],
+      "explanation": "Le coffre était rempli d'objets précieux : des pièces d'or, des bijoux anciens et des parchemins mystérieux."
+    },
+    {
+      "questionText": "De quoi parlaient les anciennes écritures du parchemin ?",
+      "options": [
+        {
+          "text": "D'un royaume perdu",
+          "correct": true
+        },
+        {
+          "text": "D'une recette de cuisine",
+          "correct": false
+        },
+        {
+          "text": "D'une prophétie apocalyptique",
+          "correct": false
+        },
+        {
+          "text": "D'une carte au trésor",
+          "correct": false
+        }
+      ],
+      "explanation": "Les anciennes écritures parlaient d'un royaume perdu, autrefois prospère."
+    },
+    {
+      "questionText": "Que devait faire la famille Beaumont pour sauver Rivemont ?",
+      "options": [
+        {
+          "text": "Accomplir la quête du roi disparu",
+          "correct": true
+        },
+        {
+          "text": "Construire un mur de protection autour de la ville",
+          "correct": false
+        },
+        {
+          "text": "Sacrifier un être cher",
+          "correct": false
+        },
+        {
+          "text": "Faire une offrande aux dieux",
+          "correct": false
+        }
+      ],
+      "explanation": "Pour sauver Rivemont, ils devaient accomplir la quête du roi disparu."
+    },
+    {
+      "questionText": "Comment la paix fut-elle rétablie dans la région ?",
+      "options": [
+        {
+          "text": "En libérant le roi perdu",
+          "correct": true
+        },
+        {
+          "text": "En détruisant un artefact maléfique",
+          "correct": false
+        },
+        {
+          "text": "En trouvant une source d'eau pure",
+          "correct": false
+        },
+        {
+          "text": "En construisant un temple sacré",
+          "correct": false
+        }
+      ],
+      "explanation": "La paix fut rétablie en libérant le roi perdu."
+    }
+  ]
+}

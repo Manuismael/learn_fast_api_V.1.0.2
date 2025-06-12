@@ -1,0 +1,510 @@
+{
+  "questions": [
+    {
+      "questionText": "Quel est le principal avantage du langage Java en termes de compatibilité ?",
+      "options": [
+        {
+          "text": "Sa capacité à être compilé pour un système d'exploitation spécifique.",
+          "correct": false
+        },
+        {
+          "text": "Sa capacité à être interprété par la machine virtuelle Java, rendant le bytecode portable sur différents environnements.",
+          "correct": true
+        },
+        {
+          "text": "Sa syntaxe similaire au langage C.",
+          "correct": false
+        },
+        {
+          "text": "Sa rapidité d'exécution supérieure à celle du langage C.",
+          "correct": false
+        }
+      ],
+      "explanation": "Le bytecode Java reste le même quel que soit l'environnement d'exécution grâce à la machine virtuelle Java."
+    },
+    {
+      "questionText": "Quelle commande est utilisée pour compiler un fichier Java ?",
+      "options": [
+        {
+          "text": "java",
+          "correct": false
+        },
+        {
+          "text": "javac",
+          "correct": true
+        },
+        {
+          "text": "interpret",
+          "correct": false
+        },
+        {
+          "text": "compile",
+          "correct": false
+        }
+      ],
+      "explanation": "La commande 'javac' suivie du nom du fichier source Java compile le code en bytecode."
+    },
+    {
+      "questionText": "Quel est le concept principal de la programmation orientée-objet ?",
+      "options": [
+        {
+          "text": "Se concentrer sur les traitements avant les données.",
+          "correct": false
+        },
+        {
+          "text": "Regrouper des données et des méthodes de traitement dans des objets.",
+          "correct": true
+        },
+        {
+          "text": "Utiliser uniquement des fonctions et des procédures.",
+          "correct": false
+        },
+        {
+          "text": "Éviter l'utilisation de classes.",
+          "correct": false
+        }
+      ],
+      "explanation": "La programmation orientée-objet se centre sur les objets, qui regroupent des données (variables) et des méthodes (fonctions) de traitement."
+    },
+    {
+      "questionText": "Qu'est-ce que l'encapsulation dans la programmation orientée-objet ?",
+      "options": [
+        {
+          "text": "La séparation des données et des méthodes d'une classe.",
+          "correct": false
+        },
+        {
+          "text": "Le regroupement de données et de méthodes dans une classe.",
+          "correct": true
+        },
+        {
+          "text": "L'utilisation exclusive de variables globales.",
+          "correct": false
+        },
+        {
+          "text": "L'accès direct à toutes les données d'un objet par d'autres objets.",
+          "correct": false
+        }
+      ],
+      "explanation": "L'encapsulation consiste à regrouper les données et les méthodes de traitement qui agissent sur ces données au sein d'une classe."
+    },
+    {
+      "questionText": "Quel est le rôle d'un constructeur dans une classe Java ?",
+      "options": [
+        {
+          "text": "Définir le type de la classe.",
+          "correct": false
+        },
+        {
+          "text": "Être invoqué lors de la création d'un objet pour initialiser ses données.",
+          "correct": true
+        },
+        {
+          "text": "Détruire l'objet à la fin de son utilisation.",
+          "correct": false
+        },
+        {
+          "text": "Afficher les données de l'objet.",
+          "correct": false
+        }
+      ],
+      "explanation": "Un constructeur est une méthode spéciale invoquée lors de la création d'un objet pour initialiser ses variables."
+    },
+    {
+      "questionText": "Comment créer un objet en Java ?",
+      "options": [
+        {
+          "text": "En utilisant le mot-clé 'instance'.",
+          "correct": false
+        },
+        {
+          "text": "En déclarant une variable du type de la classe et en utilisant le mot-clé 'new' suivi d'un constructeur de cette classe.",
+          "correct": true
+        },
+        {
+          "text": "En définissant uniquement le type de la classe.",
+          "correct": false
+        },
+        {
+          "text": "En utilisant le mot-clé 'create'.",
+          "correct": false
+        }
+      ],
+      "explanation": "La création d'un objet nécessite la déclaration d'une variable de type classe, puis l'utilisation de 'new' avec un constructeur pour instancier l'objet."
+    },
+    {
+      "questionText": "Quel est le symbole utilisé pour accéder aux variables et méthodes d'un objet en Java ?",
+      "options": [
+        {
+          "text": "->",
+          "correct": false
+        },
+        {
+          "text": ".",
+          "correct": true
+        },
+        {
+          "text": ":",
+          "correct": false
+        },
+        {
+          "text": "::",
+          "correct": false
+        }
+      ],
+      "explanation": "Le symbole '.' est utilisé pour séparer l'identificateur de l'objet de l'identificateur de la variable ou méthode à laquelle on veut accéder."
+    },
+    {
+      "questionText": "Quel mot-clé est utilisé en Java pour référencer l'objet courant ?",
+      "options": [
+        {
+          "text": "self",
+          "correct": false
+        },
+        {
+          "text": "current",
+          "correct": false
+        },
+        {
+          "text": "this",
+          "correct": true
+        },
+        {
+          "text": "me",
+          "correct": false
+        }
+      ],
+      "explanation": "Le mot-clé 'this' est utilisé pour référencer l'objet courant au sein d'une classe."
+    },
+    {
+      "questionText": "Comment déclarer un tableau d'entiers en Java?",
+      "options": [
+        {
+          "text": "int array;",
+          "correct": false
+        },
+        {
+          "text": "int[] array;",
+          "correct": true
+        },
+        {
+          "text": "array int[];",
+          "correct": false
+        },
+        {
+          "text": "array of int;",
+          "correct": false
+        }
+      ],
+      "explanation": "En Java, pour déclarer un tableau d'entiers, on utilise la syntaxe 'int[] array;' ou 'int array[];'."
+    },
+    {
+      "questionText": "Quelle classe est utilisée pour représenter les chaînes de caractères en Java ?",
+      "options": [
+        {
+          "text": "Char[]",
+          "correct": false
+        },
+        {
+          "text": "String",
+          "correct": true
+        },
+        {
+          "text": "CharSequence",
+          "correct": false
+        },
+        {
+          "text": "Text",
+          "correct": false
+        }
+      ],
+      "explanation": "La classe 'String' est utilisée pour représenter les chaînes de caractères en Java. Elle fait partie du package java.lang et n'est pas un type primitif."
+    },
+    {
+      "questionText": "Comment importer toutes les classes d'un package en Java ?",
+      "options": [
+        {
+          "text": "import package;",
+          "correct": false
+        },
+        {
+          "text": "import package.*;",
+          "correct": true
+        },
+        {
+          "text": "using package;",
+          "correct": false
+        },
+        {
+          "text": "include package;",
+          "correct": false
+        }
+      ],
+      "explanation": "Pour importer toutes les classes d'un package, on utilise la syntaxe 'import package.*;' où package est le nom du package."
+    },
+    {
+      "questionText": "Quel mot-clé est utilisé pour déclarer une variable ou une méthode de classe (statique) en Java ?",
+      "options": [
+        {
+          "text": "class",
+          "correct": false
+        },
+        {
+          "text": "static",
+          "correct": true
+        },
+        {
+          "text": "public",
+          "correct": false
+        },
+        {
+          "text": "final",
+          "correct": false
+        }
+      ],
+      "explanation": "Le mot-clé 'static' est utilisé pour déclarer une variable ou une méthode comme membre de la classe plutôt que d'une instance de la classe."
+    },
+    {
+      "questionText": "Quel est le but principal de l'héritage en programmation orientée-objet ?",
+      "options": [
+        {
+          "text": "Créer de nouvelles classes sans réutiliser le code existant.",
+          "correct": false
+        },
+        {
+          "text": "Organiser les classes de manière hiérarchique, permettant la réutilisation et l'extension du code existant.",
+          "correct": true
+        },
+        {
+          "text": "Limiter l'accès aux données des classes.",
+          "correct": false
+        },
+        {
+          "text": "Empêcher la modification du code des classes existantes.",
+          "correct": false
+        }
+      ],
+      "explanation": "L'héritage permet de créer une hiérarchie de classes où les sous-classes héritent des propriétés et méthodes des classes parentes, favorisant la réutilisation et l'organisation."
+    },
+    {
+      "questionText": "Quel mot-clé est utilisé en Java pour indiquer qu'une classe hérite d'une autre classe ?",
+      "options": [
+        {
+          "text": "implements",
+          "correct": false
+        },
+        {
+          "text": "inherits",
+          "correct": false
+        },
+        {
+          "text": "extends",
+          "correct": true
+        },
+        {
+          "text": "subclass",
+          "correct": false
+        }
+      ],
+      "explanation": "Le mot-clé 'extends' est utilisé pour indiquer qu'une classe hérite d'une autre classe."
+    },
+    {
+      "questionText": "Qu'est-ce que le polymorphisme en programmation orientée-objet ?",
+      "options": [
+        {
+          "text": "La capacité d'une classe à avoir plusieurs constructeurs.",
+          "correct": false
+        },
+        {
+          "text": "La capacité d'un objet à être une instance de plusieurs classes, permettant différents traitements selon sa classe réelle.",
+          "correct": true
+        },
+        {
+          "text": "La possibilité de créer des classes sans méthodes.",
+          "correct": false
+        },
+        {
+          "text": "L'impossibilité de modifier le comportement des classes existantes.",
+          "correct": false
+        }
+      ],
+      "explanation": "Le polymorphisme permet à un objet d'être traité comme une instance de plusieurs classes, offrant une flexibilité dans le traitement des objets."
+    },
+    {
+      "questionText": "Quelle est la différence principale entre une interface et une classe abstraite en Java ?",
+      "options": [
+        {
+          "text": "Une interface peut avoir des variables, mais une classe abstraite non.",
+          "correct": false
+        },
+        {
+          "text": "Une interface ne peut contenir que des signatures de méthodes, tandis qu'une classe abstraite peut contenir des variables et des méthodes implémentées.",
+          "correct": true
+        },
+        {
+          "text": "Une classe abstraite peut implémenter plusieurs interfaces.",
+          "correct": false
+        },
+        {
+          "text": "Il n'y a aucune différence entre une interface et une classe abstraite.",
+          "correct": false
+        }
+      ],
+      "explanation": "Une interface définit un contrat avec des signatures de méthodes, tandis qu'une classe abstraite peut avoir un état (variables) et une implémentation partielle (méthodes implémentées)."
+    },
+    {
+      "questionText": "Quel mot-clé est utilisé pour indiquer qu'une classe implémente une interface ?",
+      "options": [
+        {
+          "text": "extends",
+          "correct": false
+        },
+        {
+          "text": "inherits",
+          "correct": false
+        },
+        {
+          "text": "implements",
+          "correct": true
+        },
+        {
+          "text": "subclass",
+          "correct": false
+        }
+      ],
+      "explanation": "Le mot-clé 'implements' est utilisé pour indiquer qu'une classe s'engage à fournir l'implémentation des méthodes définies dans une interface."
+    },
+    {
+      "questionText": "Quelle est l'utilité de la gestion des exceptions en Java ?",
+      "options": [
+        {
+          "text": "Améliorer la performance du programme.",
+          "correct": false
+        },
+        {
+          "text": "Simplifier l'écriture du code.",
+          "correct": false
+        },
+        {
+          "text": "Détecter et traiter les erreurs de manière structurée, rendant le programme plus robuste.",
+          "correct": true
+        },
+        {
+          "text": "Éviter l'utilisation de boucles.",
+          "correct": false
+        }
+      ],
+      "explanation": "La gestion des exceptions permet de gérer les situations exceptionnelles et les erreurs de manière propre, ce qui rend le programme plus robuste et facile à maintenir."
+    },
+    {
+      "questionText": "Quel bloc de code est utilisé pour intercepter les exceptions en Java ?",
+      "options": [
+        {
+          "text": "try...catch",
+          "correct": true
+        },
+        {
+          "text": "if...else",
+          "correct": false
+        },
+        {
+          "text": "for...while",
+          "correct": false
+        },
+        {
+          "text": "do...while",
+          "correct": false
+        }
+      ],
+      "explanation": "Les blocs 'try...catch' sont utilisés pour surveiller un bloc de code à la recherche d'exceptions et pour intercepter et traiter ces exceptions si elles se produisent."
+    },
+    {
+      "questionText": "Quel mot-clé est utilisé pour lancer une exception en Java ?",
+      "options": [
+        {
+          "text": "catch",
+          "correct": false
+        },
+        {
+          "text": "throw",
+          "correct": true
+        },
+        {
+          "text": "exception",
+          "correct": false
+        },
+        {
+          "text": "try",
+          "correct": false
+        }
+      ],
+      "explanation": "Le mot-clé 'throw' est utilisé pour lancer une instance d'une classe d'exception, signalant ainsi une erreur ou une situation exceptionnelle."
+    },
+    {
+      "questionText": "Qu'est-ce qu'un flux (stream) en Java, dans le contexte des entrées/sorties ?",
+      "options": [
+        {
+          "text": "Un type de variable pour stocker des données.",
+          "correct": false
+        },
+        {
+          "text": "Un objet permettant de faire transiter des données entre un programme Java et une source ou destination externe.",
+          "correct": true
+        },
+        {
+          "text": "Une boucle permettant de traiter des données.",
+          "correct": false
+        },
+        {
+          "text": "Une classe pour définir des interfaces graphiques.",
+          "correct": false
+        }
+      ],
+      "explanation": "Un flux (stream) est un canal de communication permettant de lire des données à partir d'une source (entrée) ou d'écrire des données vers une destination (sortie)."
+    },
+    {
+      "questionText": "Quelle classe est utilisée pour lire les entrées clavier en Java ?",
+      "options": [
+        {
+          "text": "System.out",
+          "correct": false
+        },
+        {
+          "text": "System.in",
+          "correct": true
+        },
+        {
+          "text": "Scanner",
+          "correct": false
+        },
+        {
+          "text": "InputStream",
+          "correct": false
+        }
+      ],
+      "explanation": "La classe System.in est utilisée pour lire les entrées provenant du clavier en Java. Elle est souvent utilisée en conjonction avec d'autres classes comme BufferedReader ou Scanner pour faciliter la lecture."
+    },
+    {
+      "questionText": "Quelle classe est utilisée pour écrire dans un fichier en Java ?",
+      "options": [
+        {
+          "text": "InputStream",
+          "correct": false
+        },
+        {
+          "text": "System.out",
+          "correct": false
+        },
+        {
+          "text": "FileOutputStream",
+          "correct": true
+        },
+        {
+          "text": "BufferedReader",
+          "correct": false
+        }
+      ],
+      "explanation": "La classe FileOutputStream est utilisée pour écrire des données dans un fichier en Java."
+    }
+  ]
+}

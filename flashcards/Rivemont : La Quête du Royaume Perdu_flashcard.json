@@ -1,0 +1,49 @@
+{
+  "flashcards": [
+    {
+      "statement": "Rivemont était une ville moderne et bruyante.",
+      "isTrue": false,
+      "explanation": "Rivemont était une ville paisible où tout le monde se connaissait."
+    },
+    {
+      "statement": "Les parents de Louise et Antoine s'appelaient Jacques et Thérèse.",
+      "isTrue": false,
+      "explanation": "Les parents de Louise et Antoine s'appelaient Jacques et Marie."
+    },
+    {
+      "statement": "Jacques était forgeron.",
+      "isTrue": true,
+      "explanation": "Le père, Jacques, était forgeron."
+    },
+    {
+      "statement": "Louise et Antoine ont trouvé le passage secret sous un pont.",
+      "isTrue": false,
+      "explanation": "Louise et Antoine ont trouvé le passage secret sous les racines d'un vieux chêne."
+    },
+    {
+      "statement": "Le coffre trouvé dans la grotte contenait des pièces d'or, des bijoux anciens et des parchemins mystérieux.",
+      "isTrue": true,
+      "explanation": "À leur grande surprise, il était rempli d’objets précieux : des pièces d’or, des bijoux anciens, et des parchemins mystérieux."
+    },
+    {
+      "statement": "Les parchemins parlaient d'un royaume perdu.",
+      "isTrue": true,
+      "explanation": "Jacques, après avoir examiné le parchemin, reconnut d’anciennes écritures qui parlaient d’un royaume perdu."
+    },
+    {
+      "statement": "Seul Jacques est retourné à la grotte avec les enfants.",
+      "isTrue": false,
+      "explanation": "Jacques et Marie décidèrent d’accompagner leurs enfants pour retourner à la grotte."
+    },
+    {
+      "statement": "En libérant le roi perdu, la paix fut rétablie.",
+      "isTrue": true,
+      "explanation": "En le libérant, la paix fut rétablie dans la région."
+    },
+    {
+      "statement": "La quête de la famille Beaumont a duré une semaine.",
+      "isTrue": false,
+      "explanation": "Leur voyage dura plusieurs mois."
+    }
+  ]
+}

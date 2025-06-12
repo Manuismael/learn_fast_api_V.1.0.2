@@ -1,0 +1,64 @@
+{
+  "flashcards": [
+    {
+      "statement": "Le langage Java est un langage interprété.",
+      "isTrue": true,
+      "explanation": "Java est un langage interprété, ce qui signifie qu’un programme compilé n’est pas directement exécutable par le système d’exploitation mais il doit être interprété par un autre programme, qu’on appelle interpréteur."
+    },
+    {
+      "statement": "Les fichiers de code source Java ont l'extension .class.",
+      "isTrue": false,
+      "explanation": "Un programmeur Java écrit son code source, sous la forme de classes, dans des fichiers dont l’extension est .java. Ce code source est alors compilé par le compilateur javac en un langage appelé bytecode et enregistre le résultat dans un fichier dont l’extension est .class."
+    },
+    {
+      "statement": "Le bytecode Java est directement exécutable par le système d'exploitation.",
+      "isTrue": false,
+      "explanation": "Le bytecode ainsi obtenu n’est pas directement utilisable. Il doit être interprété par la machine virtuelle de Java qui transforme alors le code compilé en code machine compréhensible par le système d’exploitation."
+    },
+    {
+      "statement": "La compilation Java s'effectue par la commande 'javac'.",
+      "isTrue": true,
+      "explanation": "La compilation s’effectue par la commandejavacsuivie d’un ou plusieurs nom de fichiers contenant le code source de classes Java."
+    },
+    {
+      "statement": "L'interprétation du bytecode Java s'effectue par la commande 'java'.",
+      "isTrue": true,
+      "explanation": "L’exécution s’effectue par la commandejavasuivie du nom de la classe à exécuter (sans l’extension .class)."
+    },
+    {
+      "statement": "En Java, il est possible d'affecter à une variable la valeur d'une variable d'un type différent sans transformation explicite.",
+      "isTrue": false,
+      "explanation": "A l’inverse du langage C, Java est un langage très rigoureux sur le typage des données. Il est interdit d’affecter à une variable la valeur d’une variable d’un type différent si cette seconde variable n’est pas explicitement transformée."
+    },
+    {
+      "statement": "Les chaînes de caractères sont considérées comme un type primitif en Java.",
+      "isTrue": false,
+      "explanation": "Les chaînes de caractères ne sont pas considérées en Java comme un type primitif ou comme un tableau. On utilise une classe particulière, nomméeString, fournie dans le packagejava.lang."
+    },
+    {
+      "statement": "Le mot-clé 'this' est utilisé pour référencer l'objet courant.",
+      "isTrue": true,
+      "explanation": "Pour référencer l’objet “courant” (celui dans lequel se situe la ligne de code), le langage Java fournit le mot-cléthis."
+    },
+    {
+      "statement": "Il est possible d'interdire la redéfinition d'une méthode en utilisant le mot-clé 'static'.",
+      "isTrue": false,
+      "explanation": "Il est possible d’interdire la redéfinition d’une méthode ou d’une variable en introduisant le mot-cléfinalau début d’une signature de méthode ou d’une déclaration de variable."
+    },
+    {
+      "statement": "Toutes les classes Java héritent implicitement de la classe Object.",
+      "isTrue": true,
+      "explanation": "L’ensemble des classes Java, y compris celles écrites en dehors de l’API, forme une hiérarchie avec une racine unique. Cette racine est la classeObjectdont hérite toute autre classe."
+    },
+    {
+      "statement": "Une interface peut contenir des variables.",
+      "isTrue": false,
+      "explanation": "Une interface possède les caractéristiques suivantes : elle ne peut pas contenir de variables."
+    },
+    {
+      "statement": "Lorsqu’une classe hérite d’une classe abstraite, elle doit obligatoirement implémenter toutes les méthodes abstraites de sa super-classe.",
+      "isTrue": false,
+      "explanation": "Lorsqu’une classe hérite d’une classe abstraite, elle doit soit implémenter les méthodes abstraites de sa super-classe en les dotant d’un corps, soit être elle-même abstraite si au moins une des méthodes abstraites de sa super-classe reste abstraite."
+    }
+  ]
+}

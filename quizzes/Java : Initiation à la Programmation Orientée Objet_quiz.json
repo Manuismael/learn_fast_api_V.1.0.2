@@ -1,0 +1,378 @@
+{
+  "questions": [
+    {
+      "questionText": "Quel est le principal avantage du langage Java en termes de portabilité ?",
+      "options": [
+        {
+          "text": "Les programmes Java sont directement exécutables par le système d'exploitation.",
+          "correct": false
+        },
+        {
+          "text": "Le bytecode Java reste le même quel que soit l'environnement d'exécution.",
+          "correct": true
+        },
+        {
+          "text": "Les applications Java sont plus rapides à l'exécution que les applications programmées en C.",
+          "correct": false
+        },
+        {
+          "text": "Java n'est pas un langage portable.",
+          "correct": false
+        }
+      ],
+      "explanation": "La portabilité de Java est assurée par le bytecode, qui est interprété par la machine virtuelle Java (JVM), rendant le code exécutable sur différents systèmes d'exploitation sans modification."
+    },
+    {
+      "questionText": "Qu'est-ce que l'encapsulation en programmation orientée-objet avec Java ?",
+      "options": [
+        {
+          "text": "L'écriture de commentaires dans le code source.",
+          "correct": false
+        },
+        {
+          "text": "Le regroupement de données et de méthodes au sein d'une classe.",
+          "correct": true
+        },
+        {
+          "text": "La transformation du code source en bytecode.",
+          "correct": false
+        },
+        {
+          "text": "L'exécution du bytecode par l'interpréteur Java.",
+          "correct": false
+        }
+      ],
+      "explanation": "L'encapsulation est le principe de regrouper les données (attributs) et les méthodes qui les manipulent au sein d'une classe, permettant de contrôler l'accès aux données et de masquer leur implémentation interne."
+    },
+    {
+      "questionText": "Quel mot-clé est utilisé pour créer une relation d'héritage en Java ?",
+      "options": [
+        {
+          "text": "implements",
+          "correct": false
+        },
+        {
+          "text": "extends",
+          "correct": true
+        },
+        {
+          "text": "inherits",
+          "correct": false
+        },
+        {
+          "text": "class",
+          "correct": false
+        }
+      ],
+      "explanation": "Le mot-clé 'extends' est utilisé en Java pour spécifier qu'une classe hérite des propriétés et méthodes d'une autre classe (classe parente ou superclasse)."
+    },
+    {
+      "questionText": "Quel est le rôle d'un constructeur en Java ?",
+      "options": [
+        {
+          "text": "Définir le type d'un objet.",
+          "correct": false
+        },
+        {
+          "text": "Être invoqué lors de la création d'un objet pour effectuer les opérations d'initialisation.",
+          "correct": true
+        },
+        {
+          "text": "Afficher des messages à l'écran.",
+          "correct": false
+        },
+        {
+          "text": "Définir les droits d'accès aux variables d'une classe.",
+          "correct": false
+        }
+      ],
+      "explanation": "Un constructeur est une méthode spéciale qui est appelée automatiquement lors de la création d'un nouvel objet d'une classe. Il sert à initialiser l'état de l'objet."
+    },
+    {
+      "questionText": "Quelle est la différence entre un passage par valeur et un passage par référence en Java ?",
+      "options": [
+        {
+          "text": "Le passage par valeur est utilisé pour les objets, le passage par référence pour les types primitifs.",
+          "correct": false
+        },
+        {
+          "text": "Le passage par référence est utilisé pour les objets, le passage par valeur pour les types primitifs.",
+          "correct": true
+        },
+        {
+          "text": "Il n'y a pas de différence en Java.",
+          "correct": false
+        },
+        {
+          "text": "Java n'utilise que le passage par valeur.",
+          "correct": false
+        }
+      ],
+      "explanation": "En Java, les types primitifs sont passés par valeur, ce qui signifie qu'une copie de la valeur est passée à la méthode. Les objets sont passés par référence, ce qui signifie que la méthode reçoit une référence à l'objet original."
+    },
+    {
+      "questionText": "Quelle est la fonction de l'instruction `break` dans une boucle en Java ?",
+      "options": [
+        {
+          "text": "Continuer à l'itération suivante de la boucle.",
+          "correct": false
+        },
+        {
+          "text": "Sortir immédiatement de la boucle.",
+          "correct": true
+        },
+        {
+          "text": "Déclarer une nouvelle variable locale dans la boucle.",
+          "correct": false
+        },
+        {
+          "text": "Retourner une valeur depuis la boucle.",
+          "correct": false
+        }
+      ],
+      "explanation": "L'instruction `break` est utilisée pour interrompre l'exécution d'une boucle et passer au code qui suit immédiatement la boucle."
+    },
+    {
+      "questionText": "À quoi sert le mot-clé `static` en Java?",
+      "options": [
+        {
+          "text": "A définir une variable globale.",
+          "correct": false
+        },
+        {
+          "text": "A déclarer une variable ou une méthode comme appartenant à la classe plutôt qu'à une instance de la classe.",
+          "correct": true
+        },
+        {
+          "text": "A empêcher la modification d'une variable.",
+          "correct": false
+        },
+        {
+          "text": "A indiquer qu'une méthode ne peut pas être surchargée.",
+          "correct": false
+        }
+      ],
+      "explanation": "Le mot-clé `static` indique qu'une variable ou une méthode est associée à la classe elle-même, plutôt qu'à une instance spécifique de la classe. Cela signifie qu'il n'est pas nécessaire de créer un objet de la classe pour accéder à la variable ou à la méthode statique."
+    },
+    {
+      "questionText": "Qu'est-ce que le polymorphisme en Java ?",
+      "options": [
+        {
+          "text": "La capacité d'une classe à avoir plusieurs constructeurs.",
+          "correct": false
+        },
+        {
+          "text": "La capacité d'un objet à être une instance de plusieurs classes.",
+          "correct": true
+        },
+        {
+          "text": "La possibilité de redéfinir une méthode dans une sous-classe.",
+          "correct": false
+        },
+        {
+          "text": "La possibilité de déclarer une variable de classe.",
+          "correct": false
+        }
+      ],
+      "explanation": "Le polymorphisme est la capacité d'un objet à prendre plusieurs formes, c'est-à-dire à être une instance de plusieurs classes (sa classe propre et ses superclasses)."
+    },
+    {
+      "questionText": "Qu'est-ce qu'une interface en Java ?",
+      "options": [
+        {
+          "text": "Une classe qui ne peut pas être instanciée.",
+          "correct": false
+        },
+        {
+          "text": "Un type abstrait qui définit un ensemble de signatures de méthodes que les classes doivent implémenter.",
+          "correct": true
+        },
+        {
+          "text": "Une classe qui peut contenir des variables et des méthodes.",
+          "correct": false
+        },
+        {
+          "text": "Une classe qui hérite de toutes les autres classes.",
+          "correct": false
+        }
+      ],
+      "explanation": "Une interface définit un contrat que les classes doivent respecter. Elle spécifie les méthodes qu'une classe doit implémenter, sans fournir l'implémentation elle-même."
+    },
+    {
+      "questionText": "Quelle est la différence entre une classe abstraite et une interface en Java ?",
+      "options": [
+        {
+          "text": "Une classe abstraite peut être instanciée, mais pas une interface.",
+          "correct": false
+        },
+        {
+          "text": "Une classe abstraite peut avoir des variables d'instance et des méthodes implémentées, tandis qu'une interface ne peut contenir que des signatures de méthodes.",
+          "correct": true
+        },
+        {
+          "text": "Il n'y a pas de différence entre les deux.",
+          "correct": false
+        },
+        {
+          "text": "Une interface peut implémenter une autre interface, mais pas une classe abstraite.",
+          "correct": false
+        }
+      ],
+      "explanation": "Une classe abstraite peut contenir un état (variables d'instance) et une implémentation (méthodes avec code), tandis qu'une interface définit uniquement un comportement (signatures de méthodes)."
+    },
+    {
+      "questionText": "Quel est le but de la gestion des exceptions en Java ?",
+      "options": [
+        {
+          "text": "D'améliorer la vitesse d'exécution du programme.",
+          "correct": false
+        },
+        {
+          "text": "De traiter les erreurs de manière structurée et d'éviter que le programme ne plante.",
+          "correct": true
+        },
+        {
+          "text": "De masquer les erreurs aux utilisateurs.",
+          "correct": false
+        },
+        {
+          "text": "De rendre le code plus court et plus lisible.",
+          "correct": false
+        }
+      ],
+      "explanation": "La gestion des exceptions permet de détecter et de traiter les erreurs qui peuvent se produire pendant l'exécution d'un programme, offrant ainsi une manière structurée de gérer les situations exceptionnelles et d'éviter les plantages."
+    },
+    {
+      "questionText": "Quelle est la syntaxe de base pour intercepter une exception en Java ?",
+      "options": [
+        {
+          "text": "handle { ... }",
+          "correct": false
+        },
+        {
+          "text": "catch { ... }",
+          "correct": false
+        },
+        {
+          "text": "try { ... } catch (Exception e) { ... }",
+          "correct": true
+        },
+        {
+          "text": "exception { ... }",
+          "correct": false
+        }
+      ],
+      "explanation": "La syntaxe de base est `try { ... } catch (Exception e) { ... }`. Le bloc `try` contient le code qui peut potentiellement lever une exception, et le bloc `catch` contient le code qui sera exécuté si une exception est levée."
+    },
+    {
+      "questionText": "Quel est le rôle du mot-clé `throws` dans la signature d'une méthode Java ?",
+      "options": [
+        {
+          "text": "D'indiquer que la méthode doit gérer toutes les exceptions.",
+          "correct": false
+        },
+        {
+          "text": "De déclarer que la méthode peut potentiellement lever une ou plusieurs exceptions.",
+          "correct": true
+        },
+        {
+          "text": "De créer une nouvelle exception.",
+          "correct": false
+        },
+        {
+          "text": "De cacher les exceptions à l'appelant.",
+          "correct": false
+        }
+      ],
+      "explanation": "Le mot-clé `throws` dans la signature d'une méthode indique que la méthode peut lever une ou plusieurs exceptions, et que l'appelant doit les gérer (ou les propager à son tour)."
+    },
+    {
+      "questionText": "Quelle est l'utilité du package `java.io` en Java?",
+      "options": [
+        {
+          "text": "Il contient les classes de base pour la programmation graphique.",
+          "correct": false
+        },
+        {
+          "text": "Il fournit les classes pour la gestion des entrées/sorties.",
+          "correct": true
+        },
+        {
+          "text": "Il permet de créer des applications web.",
+          "correct": false
+        },
+        {
+          "text": "Il contient les classes pour les opérations mathématiques.",
+          "correct": false
+        }
+      ],
+      "explanation": "Le package `java.io` fournit les classes nécessaires pour gérer les opérations d'entrée et de sortie, telles que la lecture et l'écriture de fichiers, la communication via des sockets, etc."
+    },
+    {
+      "questionText": "Quelle est la différence entre `InputStream` et `Reader` dans le package `java.io` ?",
+      "options": [
+        {
+          "text": "`InputStream` est pour les flux de caractères, `Reader` pour les flux d'octets.",
+          "correct": false
+        },
+        {
+          "text": "`InputStream` est pour les flux d'octets, `Reader` pour les flux de caractères.",
+          "correct": true
+        },
+        {
+          "text": "Il n'y a pas de différence, ils font la même chose.",
+          "correct": false
+        },
+        {
+          "text": "`Reader` est une sous-classe de `InputStream`.",
+          "correct": false
+        }
+      ],
+      "explanation": "`InputStream` est une classe abstraite pour lire des flux d'octets, tandis que `Reader` est une classe abstraite pour lire des flux de caractères."
+    },
+    {
+      "questionText": "Quel est le rôle du mot-clé `final` en Java?",
+      "options": [
+        {
+          "text": "Empêcher l'héritage d'une classe.",
+          "correct": false
+        },
+        {
+          "text": "Empêcher la redéfinition d'une méthode ou la modification d'une variable.",
+          "correct": false
+        },
+        {
+          "text": "Les deux réponses précédentes",
+          "correct": true
+        },
+        {
+          "text": "Aucune des réponses précédentes",
+          "correct": false
+        }
+      ],
+      "explanation": "Le mot-clé final est utilisé pour empêcher l'héritage d'une classe, ou empêcher la redéfinition d'une méthode ou la modification d'une variable"
+    },
+    {
+      "questionText": "Pour concevoir une interface graphique en java, quel pattern est utilisé?",
+      "options": [
+        {
+          "text": "Singleton",
+          "correct": false
+        },
+        {
+          "text": "Strategy",
+          "correct": false
+        },
+        {
+          "text": "MVC",
+          "correct": true
+        },
+        {
+          "text": "Observer",
+          "correct": false
+        }
+      ],
+      "explanation": "Le pattern MVC (Model Vue Controller) est le plus utilisé pour les interfaces graphiques en Java."
+    }
+  ]
+}
